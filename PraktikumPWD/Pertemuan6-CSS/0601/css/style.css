@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f7ee;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2e8b57;
+    margin-bottom: 30px;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 25px;
+    border: 1px solid #b2d8bb;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+fieldset {
+    border: 1px solid #90c29f;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    background-color: #f9fdfa;
+}
+
+legend h4 {
+    margin: 0;
+    padding: 0 10px;
+    color: #2e8b57;
+    font-size: 1.1em;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.form-group strong {
+    display: inline-block;
+    width: 160px;
+    flex-shrink: 0;
+    margin-right: 15px;
+    color: #444;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group select {
+    width: 380px;
+    flex-grow: 0;
+    padding: 10px;
+    border: 1px solid #a8d7b8;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group input[type="date"]:focus,
+.form-group select:focus {
+    border-color: #2e8b57;
+    outline: none;
+    box-shadow: 0 0 5px rgba(46, 139, 87, 0.3);
+}
+
+.form-group label {
+    margin-right: 25px;
+    white-space: nowrap;
+    color: #555;
+}
+
+.submit-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.submit-button input[type="submit"] {
+    padding: 12px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.submit-button input[type="submit"]:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.submit-button input[type="submit"]:active {
+    background-color: #3e8e41;
+    transform: translateY(0);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}

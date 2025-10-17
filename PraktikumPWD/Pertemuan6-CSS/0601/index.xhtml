@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>Hotel Room Reservation</title>
+    </head>
+    <body>
+        <h1>Hotel Room Reservation</h1>
+
+        <form action="" method="post">
+
+            <fieldset>
+                <legend>
+                    <h4>Personal Data</h4>
+                </legend>
+
+                <div class="form-group">
+                    <strong>1. Name</strong>:
+                    <input type="text" id="name" name="name" />
+                </div>
+
+                <div class="form-group">
+                    <strong>2. Gender</strong>:
+                    <label for="gender_male">
+                        <input type="radio" id="gender_male" name="gender" value="Male" /> Male
+                    </label>
+                    <label for="gender_female">
+                        <input type="radio" id="gender_female" name="gender" value="Female" /> Female
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <strong>3. Email Address</strong>:
+                    <input type="email" id="email" name="email" />
+                </div>
+
+                <div class="form-group">
+                    <strong>4. Telp Number</strong>:
+                    <input type="tel" id="telp" name="telp" />
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h4>Reservation Room Details</h4>
+                </legend>
+
+                <div class="form-group">
+                    <strong>1. Reservation Name</strong>:
+                    <input type="text" id="res_name" name="res_name" />
+                </div>
+
+                <div class="form-group">
+                    <strong>2. Booking Date</strong>:
+                    <input type="date" id="booking_date" name="booking_date" />
+                </div>
+
+                <div class="form-group">
+                    <strong>3. Room Type</strong>:
+                    <select id="room_type" name="room_type">
+                        <option value="Deluxe">Deluxe</option>
+                        <option value="Standard">Standard</option>
+                        <option value="Suite">Suite</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <strong>4. Bed Type</strong>:
+                    <label for="bed_single">
+                        <input type="radio" id="bed_single" name="bed_type" value="Single bed" checked="checked" /> Single bed
+                    </label>
+                    <label for="bed_double">
+                        <input type="radio" id="bed_double" name="bed_type" value="Double bed" /> Double bed
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <strong>5. Breakfast</strong>:
+                    <label for="breakfast_yes">
+                        <input type="radio" id="breakfast_yes" name="breakfast_option" value="With Breakfast" checked="checked" /> With Breakfast
+                    </label>
+                    <label for="breakfast_no">
+                        <input type="radio" id="breakfast_no" name="breakfast_option" value="Without Breakfast" /> Without Breakfast
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h4>Payment &amp; Stay Dates</h4>
+                </legend>
+
+                <div class="form-group">
+                    <strong>1. Check-in Date</strong>:
+                    <input type="date" id="checkin_date" name="checkin_date" />
+                </div>
+
+                <div class="form-group">
+                    <strong>2. Check-out Date</strong>:
+                    <input type="date" id="checkout_date" name="checkout_date" />
+                </div>
+
+                <div class="form-group">
+                    <strong>3. Payment Method</strong>:
+                    <label for="payment_cash">
+                        <input type="radio" id="payment_cash" name="payment_method" value="Cash" checked="checked" /> Cash
+                    </label>
+                    <label for="payment_card">
+                        <input type="radio" id="payment_card" name="payment_method" value="Credit Card" /> Credit Card
+                    </label>
+                </div>
+            </fieldset>
+
+            <div class="submit-button">
+                <input type="submit" value="Submit Reservation" />
+            </div>
+        </form>
+    </body>
+</html>
